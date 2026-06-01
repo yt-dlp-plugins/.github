@@ -1,0 +1,26 @@
+name: Site Request
+description: Request a new site extractor
+title: "[Request] "
+labels: ["request"]
+body:
+  - type: input
+    id: site-url
+    attributes:
+      label: Site URL
+      placeholder: https://example.com
+    validations:
+      required: true
+
+  - type: textarea
+    id: example-urls
+    attributes:
+      label: Example URLs
+      description: Paste a few video/playlist URLs you want to download
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Anything useful? Auth required? Geo-restricted?
